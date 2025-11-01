@@ -2998,6 +2998,86 @@
         function sendToEita() {
             window.open('https://eitaa.com/fatemeh_motamed', '_blank', 'noopener,noreferrer');
         }
-    </script>
-</body>      
+   </script>
+    <!-- چت‌بات رایگان فن‌آموز زرین -->
+<div id="chatbot" style="position:fixed;bottom:20px;left:20px;width:350px;background:#fff;border:1px solid #ddd;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);font-family:Tahoma;overflow:hidden;z-index:9999;">
+    <div style="background:#2c3e50;color:white;padding:12px;text-align:center;font-weight:bold;">دستیار هوشمند</div>
+    <div id="chat-messages" style="height:300px;padding:10px;overflow-y:auto;background:#f9f9f9;"></div>
+    <div style="display:flex;border-top:1px solid #ddd;">
+        <input type="text" id="chatbot-input" placeholder="پیام خود را بنویسید..." style="flex:1;border:none;padding:12px;outline:none;font-size:14px;" onkeypress="if(event.key==='Enter') sendMessage()">
+        <button onclick="sendMessage()" style="background:#2c3e50;color:white;border:none;padding:0 16px;cursor:pointer;">ارسال</button>
+    </div>
+</div>
+
+<script>
+// کلید جدید OpenAI (رایگان)
+const OPENAI_KEY = 'sk-proj-abc123...'; // ← کلید جدیدت رو اینجا بذار
+
+async function sendMessage() {
+    const input = document.getElementById('chatbot-input');
+    const message = input.value.trim();
+    if (!message) return;
+
+    addMessage(message, true);
+    input.value = '';
+    showTyping();
+
+    try {
+        const res = await fetch('https://openai-proxy.cors.sh/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer $ {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}`,
+                'x-proxy': 'true'
+            },
+            body: JSON.stringify({
+                model: 'gpt-3.5-turbo',
+                messages: [
+                    { role: 'system', content: 'شما دستیار هوشمند سایت فن‌آموز زرین هستید. پاسخ‌ها کوتاه، مفید و به فارسی باشد. اگر پرسید چطور دوره بخرم، بگو: "از منوی دوره‌ها انتخاب کنید و روی دکمه خرید کلیک کنید."' },
+                    { role: 'user', content: message }
+                ],
+                max_tokens: 500
+            })
+        });
+
+        const data = await res.json();
+        hideTyping();
+
+        if (data.error) throw new Error(data.error.message);
+        addMessage(data.choices[0].message.content);
+
+    } catch (err) {
+        hideTyping();
+        addMessage('خطا: لطفاً دوباره تلاش کنید یا با ۰۹۳۷۲۵۶۵۹۹۴ تماس بگیرید.');
+        console.error(err);
+    }
+}
+
+function addMessage(text, isUser = false) {
+    const messages = document.getElementById('chat-messages');
+    const div = document.createElement('div');
+    div.style.cssText = 'margin:8px 0;padding:8px 12px;border-radius:12px;max-width:80%;word-wrap:break-word;' + 
+        (isUser ? 'background:#3498db;color:white;margin-left:auto;' : 'background:#e0e0e0;color:#333;margin-right:auto;');
+    div.textContent = text;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+}
+function showTyping() {
+    const messages = document.getElementById('chat-messages');
+    const div = document.createElement('div');
+    div.id = 'typing';
+    div.style.cssText = 'margin:8px 0;padding:8px 12px;border-radius:12px;background:#e0e0e0;color:#777;font-style:italic;';
+    div.textContent = 'در حال نوشتن...';
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+}
+function hideTyping() {
+    const typing = document.getElementById('typing');
+    if (typing) typing.remove();
+}
+
+// شروع چت
+addMessage('سلام! چطور می‌تونم کمکتون کنم؟');
+</script>
+</body>  
 </html>
