@@ -15,7 +15,7 @@
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             font-size: 14px;
             line-height: 1.5;
-            background-color: #808080 !important; /* پس‌زمینه خاکستری کامل */
+            background-color: #C0C0C0 !important; /* پس‌زمینه نقره‌ای براق، صاف و شیک مانند فلز صیقلی */
         }
         
         :root {
@@ -1828,7 +1828,7 @@
 
         /* Schools section background */
         #schools {
-            background-color: #808080 !important; /* خاکستری مانند صفحه */
+            background-color: #C0C0C0 !important; /* تغییر به نقره‌ای */
         }
 
         /* Squares in schools like fields (gradient background) */
@@ -1852,6 +1852,144 @@
             margin: 2rem 0 !important; /* فاصله بیشتر */
             font-size: 1.2rem !important; /* بزرگ‌تر کردن فونت */
         }
+
+        /* --- چت‌بات: افکت نور آبی دائمی و آرام --- */
+    .chatbot-toggle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #0288D1;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1000;
+      /* افکت نور آبی دائمی */
+      box-shadow: 
+        0 0 20px rgba(2, 136, 209, 0.6),
+        0 0 40px rgba(2, 136, 209, 0.4),
+        0 0 60px rgba(2, 136, 209, 0.2);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .chatbot-toggle:hover {
+      transform: scale(1.08);
+      box-shadow: 
+        0 0 30px rgba(2, 136, 209, 0.8),
+        0 0 60px rgba(2, 136, 209, 0.5),
+        0 0 90px rgba(2, 136, 209, 0.3);
+    }
+
+    .chatbot-toggle::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+      pointer-events: none;
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.1); }
+    }
+
+    /* --- نوتیفیکیشن بالای آیکون --- */
+    .chatbot-notification {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      z-index: 1001;
+      background: linear-gradient(135deg, #0288D1, #26A69A);
+      color: white;
+      padding: 14px 18px;
+      border-radius: 20px;
+      max-width: 260px;
+      box-shadow: 0 8px 32px rgba(2, 136, 209, 0.3);
+      transform: translateY(20px) scale(0.8);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .chatbot-notification.show {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      animation: bounceIn 0.6s ease-out;
+    }
+
+    .chatbot-notification::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #0288D1;
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3) translateY(20px); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9) translateY(-5px); }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    /* --- پنجره چت‌بات --- */
+    .chatbot-window {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 340px;
+      height: 540px;
+      background: var(--glass-bg-light);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border-light);
+      border-radius: 16px;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 60px var(--shadow-light);
+      transform: scale(0.9);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1002;
+    }
+
+    .chatbot-window.active {
+      display: flex;
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    /* موبایل */
+    @media (max-width: 768px) {
+      .chatbot-toggle { width: 56px; height: 56px; font-size: 24px; }
+      .chatbot-notification { bottom: 90px; right: 15px; max-width: 240px; font-size: 11px; }
+      .chatbot-window { width: 100%; height: 100%; bottom: 0; right: 0; border-radius: 0; }
+    }
+
+    @media (max-width: 480px) {
+      .chatbot-toggle { width: 52px; height: 52px; font-size: 22px; }
+      .chatbot-notification { bottom: 80px; right: 12px; }
+    }
+
+    /* --- حذف بخش بانک سوالات --- */
+    /* در HTML، مربع بانک سوالات حذف شد */
     </style>
 </head>
 <body class="light-mode transition-all duration-300">
@@ -2097,7 +2235,7 @@
     </section>
 
     <!-- Software Resources Section -->
-    <section id="resources" class="py-8 px-4" style="background-color: #808080;">
+    <section id="resources" class="py-8 px-4" style="background-color: #C0C0C0;">
         <div class="container mx-auto">
             <h2>
                 <i class="fas fa-download ml-3"></i>
@@ -2439,7 +2577,7 @@
     </section>
 
     <!-- Schools and Team Section - Combined with Bank of Questions -->
-    <section id="schools" class="py-4 px-4" style="background-color: #808080;">
+    <section id="schools" class="py-4 px-4" style="background-color: #C0C0C0;">
         <div class="container mx-auto">
             <h2></h2> <!-- عنوان جدید -->
             
@@ -2467,12 +2605,6 @@
                 <div class="glass-card p-6 text-center cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-800 transition square-btn" onclick="window.location.href='useful.html'">
                     <img src="tools-icon.png" alt="آیکون لینک ابزارهای مفید و بانک سوالات" class="w-32 h-32 mb-2" /> <!-- آیکون بزرگ‌تر، جایگذاری آپلود کاربر -->
                     <h3 class="font-bold mb-1">لینک سایت های مفید  </h3>
-                </div>
-
-                <!-- Bank of Questions Square -->
-                <div class="glass-card p-6 text-center cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-800 transition square-btn" onclick="window.location.href='bank.html'">
-                    <img src="bank-icon.png" alt="آیکون بانک سوالات" class="w-32 h-32 mb-2" /> <!-- آیکون جدید برای آپلود کاربر -->
-                    <h3 class="font-bold mb-1">بانک سوالات</h3>
                 </div>
             </div>
         </div>
@@ -2999,16 +3131,5 @@
             window.open('https://eitaa.com/fatemeh_motamed', '_blank', 'noopener,noreferrer');
         }
    </script>
-    <!-- چت‌بات رایگان فن‌آموز زرین -->
-<div id="chatbot" style="position:fixed;bottom:20px;left:20px;width:350px;background:#fff;border:1px solid #ddd;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);font-family:Tahoma;overflow:hidden;z-index:9999;">
-    <div style="background:#2c3e50;color:white;padding:12px;text-align:center;font-weight:bold;">دستیار هوشمند</div>
-    <div id="chat-messages" style="height:300px;padding:10px;overflow-y:auto;background:#f9f9f9;"></div>
-    <div style="display:flex;border-top:1px solid #ddd;">
-        <input type="text" id="chatbot-input" placeholder="پیام خود را بنویسید..." style="flex:1;border:none;padding:12px;outline:none;font-size:14px;" onkeypress="if(event.key==='Enter') sendMessage()">
-        <button onclick="sendMessage()" style="background:#2c3e50;color:white;border:none;padding:0 16px;cursor:pointer;">ارسال</button>
-    </div>
-</div>
-
-<script>
 </body>  
 </html>
