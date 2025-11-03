@@ -16,11 +16,11 @@
             font-size: 14px;
             line-height: 1.5;
         }
-       
+      
         :root {
             --primary-color: #0288D1; /* آبی اصلی - هماهنگ با تم آموزشی */
             --secondary-color: #F5F7FA; /* خاکستری روشن برای پس‌زمینه light */
-            --accent-color: #26A69A; /* سبز برای برجسته‌سازی - هماهنگ با آبی */
+            --accent-color: #0288D1; /* تغییر به آبی برای دکمه‌ها */
             --text-primary: #212121; /* متن اصلی light */
             --text-secondary: #546E7A; /* متن ثانویه light */
             --text-primary-dark: #FFFFFF; /* متن اصلی dark */
@@ -33,7 +33,7 @@
             --shadow-dark: rgba(0,0,0,0.3); /* سایه dark */
             --blur-amount: 8px;
             --footer-bg: #0277BD; /* فوتر آبی تیره */
-           
+          
             /* Legacy support for existing styles */
             --primary-blue: var(--primary-color);
             --secondary-gray: var(--secondary-color);
@@ -151,7 +151,7 @@
             transform: translateZ(50px) scale(1.2);
         }
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent-color), #00695C);
+            background: linear-gradient(135deg, var(--primary-color), #01579B);
             color: white;
             padding: 14px 28px;
             border-radius: 10px;
@@ -164,7 +164,7 @@
             justify-content: center;
             font-weight: 600;
             font-size: 14px;
-            box-shadow: 0 2px 8px rgba(38, 166, 154, 0.15);
+            box-shadow: 0 2px 8px rgba(2, 136, 209, 0.15);
             position: relative;
             overflow: hidden;
         }
@@ -185,7 +185,7 @@
             background: var(--secondary-color);
             color: var(--text-primary);
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 4px 15px rgba(38, 166, 154, 0.25);
+            box-shadow: 0 4px 15px rgba(2, 136, 209, 0.25);
         }
         .btn-primary:active {
             transform: translateY(-2px) scale(0.98);
@@ -312,7 +312,7 @@
             box-shadow: 0 15px 30px rgba(0,31,63,0.1);
         }
         .team-section {
-            background: linear-gradient(135deg, var(--secondary-color), #FFFFFF);
+            background: linear-gradient(135deg, var(--secondary-color), #F5F7FA);
             border-radius: 16px;
             padding: 2rem;
             margin: 1rem 0;
@@ -571,12 +571,12 @@
                 border-radius: 0;
                 z-index: 9999;
             }
-           
+          
             .chatbot-container {
                 bottom: 15px;
                 right: 15px;
             }
-           
+          
             .chatbot-toggle {
                 width: 56px;
                 height: 56px;
@@ -595,32 +595,32 @@
                 border-radius: 0;
                 z-index: 9999;
             }
-           
+          
             .chatbot-header {
                 padding: 20px 15px 15px 15px;
                 padding-top: max(20px, env(safe-area-inset-top));
             }
-           
+          
             .chatbot-messages {
                 padding: 15px;
                 padding-bottom: max(15px, env(safe-area-inset-bottom));
             }
-           
+          
             .chatbot-input-container {
                 padding: 15px;
                 padding-bottom: max(15px, env(safe-area-inset-bottom));
             }
-           
+          
             .chatbot-contact-buttons {
                 padding: 15px;
                 padding-bottom: max(15px, env(safe-area-inset-bottom));
             }
-           
+          
             .chatbot-container {
                 bottom: 12px;
                 right: 12px;
             }
-           
+          
             .chatbot-toggle {
                 width: 52px;
                 height: 52px;
@@ -797,7 +797,7 @@
                 width: 320px;
                 height: 480px;
             }
-           
+          
             .heading-primary {
                 font-size: 24px;
             }
@@ -892,7 +892,7 @@
             100% { transform: scale(1) translateY(0); opacity: 1; }
         }
         .ai-button-section {
-            background: linear-gradient(135deg, var(--secondary-color), #FFFFFF);
+            background: linear-gradient(135deg, var(--secondary-color), #F5F7FA);
             border-radius: 24px;
             padding: 3rem 2rem;
             margin: 1rem 0;
@@ -1011,7 +1011,7 @@
         }
         /* Styles for Ethics Videos Section */
         .ethics-section {
-            background: linear-gradient(135deg, var(--secondary-color), #FFFFFF);
+            background: linear-gradient(135deg, var(--secondary-color), #F5F7FA);
             border-radius: 24px;
             padding: 2rem;
             margin: 2rem 0;
@@ -1468,246 +1468,282 @@
             </div>
         </div>
     </header>
- 
-                    کتاب‌های درسی و منابع آموزشی
-                </h3>
-                <!-- Shared Non-Technical Competencies -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">شایستگی‌های غیرفنی مشترک</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/12397" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            الزامات محیط کار
-                        </a>
-                        <a href="http://chap.sch.ir/books/11071" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی الزامات محیط کار
-                        </a>
-                        <a href="http://chap.sch.ir/books/12520" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کارگاه نوآوری و کارآفرینی
-                        </a>
-                        <a href="http://chap.sch.ir/books/9972" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی کارگاه نوآوری و کارآفرینی
-                        </a>
-                        <a href="http://chap.sch.ir/books/12518" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کارگاه نوآوری و کارآفرینی
-                        </a>
-                        <a href="http://chap.sch.ir/books/9972" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی کارگاه نوآوری و کارآفرینی
-                        </a>
-                        <a href="http://chap.sch.ir/books/12518" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کار کاربرد فناوری‌های نوین
-                        </a>
-                        <a href="http://chap.sch.ir/books/10010" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی کاربرد فناوری‌های نوین
-                        </a>
-                        <a href="http://chap.sch.ir/books/12519" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            مدیریت تولید
-                        </a>
-                        <a href="http://chap.sch.ir/books/11079" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی مدیریت تولید
-                        </a>
-                        <a href="http://chap.sch.ir/books/12581" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            اخلاق حرفه‌ای
-                        </a>
-                        <a href="http://chap.roshd.ir/books/6916" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-video ml-2"></i>
-                            فیلم‌های آموزشی اخلاق حرفه‌ای
-                        </a>
-                    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-gradient text-white py-24 mx-4 rounded-3xl mb-4 relative">
+        <div class="parallax-bg"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in" style="color: white !important;">کتاب‌های درسی و منابع آموزشی</h2>
+            <h3 class="text-2xl md:text-3xl mb-4 animate-fade-in-delay-1">رشته‌های کامپیوتر شاخه فنی و حرفه‌ای</h3>
+            <p class="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed opacity-90 animate-fade-in-delay-4">
+                دسترسی به کتاب‌های درسی و ویدیوهای آموزشی مرتبط با رشته‌های شبکه و نرم‌افزار، تولید محتوای چندرسانه‌ای و سایر شاخه‌ها.
+            </p>
+        </div>
+    </section>
+    <!-- Resources Section -->
+    <section class="py-4 px-4" id="resources" style="background-color: var(--secondary-gray);">
+        <div class="container mx-auto">
+            <h2 class="book-main-heading">
+                <i class="fas fa-book ml-3"></i>
+                کتاب‌های درسی و منابع آموزشی
+            </h2>
+            <!-- Shared Non-Technical Competencies -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">شایستگی‌های غیرفنی مشترک</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="http://chap.sch.ir/books/12397" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        الزامات محیط کار
+                    </a>
+                    <a href="http://chap.sch.ir/books/11071" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی الزامات محیط کار
+                    </a>
+                    <a href="http://chap.sch.ir/books/12520" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کارگاه نوآوری و کارآفرینی
+                    </a>
+                    <a href="http://chap.sch.ir/books/9972" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی کارگاه نوآوری و کارآفرینی
+                    </a>
+                    <a href="http://chap.sch.ir/books/12518" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کارگاه نوآوری و کارآفرینی
+                    </a>
+                    <a href="http://chap.sch.ir/books/9972" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی کارگاه نوآوری و کارآفرینی
+                    </a>
+                    <a href="http://chap.sch.ir/books/12518" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کار کاربرد فناوری‌های نوین
+                    </a>
+                    <a href="http://chap.sch.ir/books/10010" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی کاربرد فناوری‌های نوین
+                    </a>
+                    <a href="http://chap.sch.ir/books/12519" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        مدیریت تولید
+                    </a>
+                    <a href="http://chap.sch.ir/books/11079" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی مدیریت تولید
+                    </a>
+                    <a href="http://chap.sch.ir/books/12581" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        اخلاق حرفه‌ای
+                    </a>
+                    <a href="http://chap.roshd.ir/books/6916" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-video ml-2"></i>
+                        فیلم‌های آموزشی اخلاق حرفه‌ای
+                    </a>
                 </div>
-                <!-- New Books for Network and Software Field -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">کتاب های جدید رشته شبکه و نرم افزار</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="https://drive.google.com/file/d/1Bw9irF1vHr1VXxM03VqFDQJL6c7Ul17u/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            برنامه سازی و الکترونیک محتوای تولید
-                        </a>
-                        <a href="https://drive.google.com/file/d/17XGKo6s3I6lxqtYK1aLDsteaWGEhCMjE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            هوش مصنوعی
-                        </a>
-                        <a href="https://drive.google.com/file/d/1SBnvaKYJa4O-60k2xYv6-AMe7q52eym4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نصب و نگهداری تجهیزات شبکه و نرم افزار
-                        </a>
-                        <a href="https://drive.google.com/file/d/1_rPObnM-a10IE0GFUT-9dbVFecp73ZOs/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            پیاده سازی سیستم های اطلاعاتی و طراحی وب
-                        </a>
-                        <a href="https://drive.google.com/file/d/1sgrAPkPTbb0NQdGa3_NMj6nxN0ZVSlB2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            تجارت الکترونیک و امنیت شبکه
-                        </a>
-                        <a href="https://drive.google.com/file/d/1P1G3sIShsuHNBmJqaIobWie8LhO5_RQK/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            توسعه و برنامه سازی و پایگاه داده
-                        </a>
-                        <a href="https://drive.google.com/file/d/1F7rD6buEtnBSD90nFfPEF-BZqnWwqEI1/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نصب و راه اندازی سیستم های رایانه ایی
-                        </a>
-                        <a href="https://drive.google.com/file/d/1RWnCXE9RCpAznIfPMe_L_kGSHsh2Ew0C/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            دانش فنی پایه
-                        </a>
-                        <a href="https://drive.google.com/file/d/1tprrGkB5KPIQhdpaVUYfdxlSdiEhjLFv/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            دانش فنی تخصصی
-                        </a>
-                    </div>
+            </div>
+            <!-- New Books for Network and Software Field -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">کتاب های جدید رشته شبکه و نرم افزار</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="https://drive.google.com/file/d/1Bw9irF1vHr1VXxM03VqFDQJL6c7Ul17u/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        برنامه سازی و الکترونیک محتوای تولید
+                    </a>
+                    <a href="https://drive.google.com/file/d/17XGKo6s3I6lxqtYK1aLDsteaWGEhCMjE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        هوش مصنوعی
+                    </a>
+                    <a href="https://drive.google.com/file/d/1SBnvaKYJa4O-60k2xYv6-AMe7q52eym4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نصب و نگهداری تجهیزات شبکه و نرم افزار
+                    </a>
+                    <a href="https://drive.google.com/file/d/1_rPObnM-a10IE0GFUT-9dbVFecp73ZOs/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        پیاده سازی سیستم های اطلاعاتی و طراحی وب
+                    </a>
+                    <a href="https://drive.google.com/file/d/1sgrAPkPTbb0NQdGa3_NMj6nxN0ZVSlB2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        تجارت الکترونیک و امنیت شبکه
+                    </a>
+                    <a href="https://drive.google.com/file/d/1P1G3sIShsuHNBmJqaIobWie8LhO5_RQK/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        توسعه و برنامه سازی و پایگاه داده
+                    </a>
+                    <a href="https://drive.google.com/file/d/1F7rD6buEtnBSD90nFfPEF-BZqnWwqEI1/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نصب و راه اندازی سیستم های رایانه ایی
+                    </a>
+                    <a href="https://drive.google.com/file/d/1RWnCXE9RCpAznIfPMe_L_kGSHsh2Ew0C/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        دانش فنی پایه
+                    </a>
+                    <a href="https://drive.google.com/file/d/1tprrGkB5KPIQhdpaVUYfdxlSdiEhjLFv/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        دانش فنی تخصصی
+                    </a>
                 </div>
-                <!-- Network and Software Field -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته شبکه و نرم‌افزار رایانه</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/12420" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            دانش فنی پایه
-                        </a>
-                        <a href="http://chap.sch.ir/books/12976" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نصب و راه‌اندازی سیستم‌های رایانه‌ای
-                        </a>
-                        <a href="http://chap.sch.ir/books/12977" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            تولید محتوای الکترونیک و برنامه‌سازی
-                        </a>
-                        <a href="http://chap.sch.ir/books/12402" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نقشه‌کشی فنی رایانه‌ای
-                        </a>
-                        <a href="http://chap.sch.ir/books/12531" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            توسعه برنامه‌سازی و پایگاه داده
-                        </a>
-                        <a href="http://chap.sch.ir/books/12532" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            پیاده‌سازی سیستم‌های اطلاعاتی و طراحی وب
-                        </a>
-                        <a href="http://chap.sch.ir/books/12596" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            دانش فنی تخصصی
-                        </a>
-                        <a href="http://chap.sch.ir/books/12597" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            تجارت الکترونیک و امنیت شبکه
-                        </a>
-                        <a href="http://chap.sch.ir/books/12810" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نصب و نگهداری تجهیزات شبکه و سخت‌افزار
-                        </a>
-                        <a href="http://chap.sch.ir/books/12421" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کتاب همراه هنرجو
-                        </a>
-                    </div>
+            </div>
+            <!-- Network and Software Field -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته شبکه و نرم‌افزار رایانه</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="http://chap.sch.ir/books/12420" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        دانش فنی پایه
+                    </a>
+                    <a href="http://chap.sch.ir/books/12976" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نصب و راه‌اندازی سیستم‌های رایانه‌ای
+                    </a>
+                    <a href="http://chap.sch.ir/books/12977" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        تولید محتوای الکترونیک و برنامه‌سازی
+                    </a>
+                    <a href="http://chap.sch.ir/books/12402" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نقشه‌کشی فنی رایانه‌ای
+                    </a>
+                    <a href="http://chap.sch.ir/books/12531" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        توسعه برنامه‌سازی و پایگاه داده
+                    </a>
+                    <a href="http://chap.sch.ir/books/12532" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        پیاده‌سازی سیستم‌های اطلاعاتی و طراحی وب
+                    </a>
+                    <a href="https://drive.google.com/file/d/1zHXqVMOeNIS-Vq3wQ5R_1L9elSx7zwgJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        طراحی وب مقدماتی جلد اول
+                    </a>
+                    <a href="https://drive.google.com/file/d/1XWwc9mhd3K-oI8_NsYYFUxbniD5Kdfvl/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        طراحی وب مقدماتی جلد دوم
+                    </a>
+                    <a href="http://chap.sch.ir/books/12596" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        دانش فنی تخصصی
+                    </a>
+                    <a href="http://chap.sch.ir/books/12597" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        تجارت الکترونیک و امنیت شبکه
+                    </a>
+                    <a href="http://chap.sch.ir/books/12810" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نصب و نگهداری تجهیزات شبکه و سخت‌افزار
+                    </a>
+                    <a href="http://chap.sch.ir/books/12421" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کتاب همراه هنرجو
+                    </a>
                 </div>
-                <!-- Multimedia Producer Field -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولیدکننده چندرسانه‌ای</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/13072" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            سیستم عامل
-                        </a>
-                        <a href="http://chap.sch.ir/books/13073" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            مفاهیم پایه فناوری اطلاعات
-                        </a>
-                        <a href="http://chap.sch.ir/books/11061" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            اطلاعات و ارتباطات
-                        </a>
-                        <a href="http://chap.sch.ir/books/11062" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            بسته‌های نرم‌افزاری Excel - PowerPoint
-                        </a>
-                        <a href="http://chap.sch.ir/books/11060" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نرم‌افزار واژه‌پرداز Word 2016
-                        </a>
-                        <a href="http://chap.sch.ir/books/11059" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            نرم‌افزار اداری تکمیلی Microsoft Access - OneNote
-                        </a>
-                        <a href="http://chap.sch.ir/books/11089" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            چندرسانه‌ای دوبعدی جلد اول - Adobe Photoshop
-                        </a>
-                        <a href="http://chap.sch.ir/books/11081" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            Adobe Audition
-                        </a>
-                        <a href="http://chap.sch.ir/books/12075" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            چندرسانه‌ای سه‌بعدی جلد دوم - Adobe Media Encoder
-                        </a>
-                        <a href="http://chap.sch.ir/books/12107" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            Adobe Premiere
-                        </a>
-                    </div>
+            </div>
+            <!-- Multimedia Producer Field -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولیدکننده چندرسانه‌ای</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="http://chap.sch.ir/books/13072" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        سیستم عامل
+                    </a>
+                    <a href="http://chap.sch.ir/books/13073" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        مفاهیم پایه فناوری اطلاعات
+                    </a>
+                    <a href="http://chap.sch.ir/books/11061" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        اطلاعات و ارتباطات
+                    </a>
+                    <a href="http://chap.sch.ir/books/11062" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        بسته‌های نرم‌افزاری Excel - PowerPoint
+                    </a>
+                    <a href="http://chap.sch.ir/books/11060" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نرم‌افزار واژه‌پرداز Word 2016
+                    </a>
+                    <a href="http://chap.sch.ir/books/11059" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        نرم‌افزار اداری تکمیلی Microsoft Access - OneNote
+                    </a>
+                    <a href="http://chap.sch.ir/books/11089" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        چندرسانه‌ای دوبعدی جلد اول - Adobe Photoshop
+                    </a>
+                    <a href="http://chap.sch.ir/books/11081" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        Adobe Audition
+                    </a>
+                    <a href="http://chap.sch.ir/books/12075" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        چندرسانه‌ای سه‌بعدی جلد دوم - Adobe Media Encoder
+                    </a>
+                    <a href="http://chap.sch.ir/books/12107" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        Adobe Premiere
+                    </a>
+                    <a href="https://drive.google.com/file/d/11B631NapomGBjfb1XuIsaKGBtobJoCS8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        طراحی امور گرافیکی با رایانه
+                    </a>
                 </div>
-                <!-- Internet Database Developer Field -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولیدکننده و توسعه‌دهنده پایگاه‌های اینترنتی</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/11068" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            سیستم‌های مدیریت محتوا - WordPress
-                        </a>
-                        <a href="http://chap.sch.ir/books/11067" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            توسعه‌دهنده صفحات وب با PHP و MySQL
-                        </a>
-                    </div>
+            </div>
+            <!-- Internet Database Developer Field -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولیدکننده و توسعه‌دهنده پایگاه‌های اینترنتی</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="https://drive.google.com/file/d/1XraJs4V-OMxK12hPGlZj83Vw4_CbxLiX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        سیستم‌های مدیریت محتوا پایه دوازدهم
+                    </a>
+                    <a href="https://drive.google.com/file/d/1birHi7z9FkntxGFBf8FED7IN-rQamdq3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        توسعه‌دهنده صفحات وب با PHP و MySQL
+                    </a>
                 </div>
-                <!-- Educational Electronic Content Producer Field -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولید محتوای آموزشی الکترونیکی</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/11063" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            تولیدکننده محتوای الکترونیکی عمومی جلد اول - Adobe Photoshop – Adobe Animate
-                        </a>
-                        <a href="http://chap.sch.ir/books/11064" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            تولیدکننده محتوای الکترونیکی عمومی جلد دوم - Adobe Audition – Adobe Premiere – ArcSoft Media Converter
-                        </a>
-                        <a href="http://chap.sch.ir/books/11091" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            محتواساز آموزش الکترونیکی جلد اول - Adobe Captivate 2019
-                        </a>
-                        <a href="http://chap.sch.ir/books/11090" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            محتواساز آموزش الکترونیکی جلد دوم - Adobe Captivate 2019 - AutoPlay Media Studio 8
-                        </a>
-                        <a href="http://chap.sch.ir/books/11066" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کاربر گرافیکی محتوای آموزشی - Adobe Illustrator – MOHO
-                        </a>
-                    </div>
+            </div>
+            <!-- Educational Electronic Content Producer Field -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته تولید محتوای آموزشی الکترونیکی</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="http://chap.sch.ir/books/11063" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        تولیدکننده محتوای الکترونیکی عمومی جلد اول - Adobe Photoshop – Adobe Animate
+                    </a>
+                    <a href="http://chap.sch.ir/books/11064" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        تولیدکننده محتوای الکترونیکی عمومی جلد دوم - Adobe Audition – Adobe Premiere – ArcSoft Media Converter
+                    </a>
+                    <a href="http://chap.sch.ir/books/11091" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        محتواساز آموزش الکترونیکی جلد اول - Adobe Captivate 2019
+                    </a>
+                    <a href="http://chap.sch.ir/books/11090" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        محتواساز آموزش الکترونیکی جلد دوم - Adobe Captivate 2019 - AutoPlay Media Studio 8
+                    </a>
+                    <a href="http://chap.sch.ir/books/11066" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کاربر گرافیکی محتوای آموزشی - Adobe Illustrator – MOHO
+                    </a>
                 </div>
-                <!-- Other Fields -->
-                <div class="book-section">
-                    <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته‌های تصویرسازی دیجیتالی، برنامه‌نویسی بازی‌ها و پایگاه داده</h4>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <a href="http://chap.sch.ir/books/11092" target="_blank" rel="noopener noreferrer" class="book-link">
-                            <i class="fas fa-book ml-2"></i>
-                            کاربر این‌دیزاین - Adobe InDesign
-                        </a>
-                    </div>
+            </div>
+            <!-- Other Fields -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">رشته‌های تصویرسازی دیجیتالی، برنامه‌نویسی بازی‌ها و پایگاه داده</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="http://chap.sch.ir/books/11092" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-book ml-2"></i>
+                        کاربر این‌دیزاین - Adobe InDesign
+                    </a>
+                </div>
+            </div>
+            <!-- جدول دروس رشته‌های فنی حرفه‌ای -->
+            <div class="book-section">
+                <h4 class="font-bold mb-4 text-base" style="color: var(--accent-green);">جداول دروس رشته‌های شاخه فنی حرفه‌ای</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="https://drive.google.com/file/d/1fE7IXRSpnqfEtYWYNRdO5QR9jvdVlXv2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="book-link">
+                        <i class="fas fa-table ml-2"></i>
+                        جداول دروس رشته‌های شاخه فنی حرفه‌ای
+                    </a>
                 </div>
             </div>
         </div>
@@ -1738,11 +1774,11 @@
         <div class="chatbot-notification" id="chatbot-notification" onclick="openChatbotWithNotification()">
             سلام وقت بخیر! به وب‌سایت فن‌آموز زرین خوش آمدید. لطفاً اگر سوالی دارید روی من کلیک کنید.
         </div>
-       
+      
         <button class="chatbot-toggle" onclick="toggleChatbot()">
             <i class="fas fa-robot"></i>
         </button>
-       
+      
         <div class="chatbot-window" id="chatbot-window">
             <div class="chatbot-header">
                 <div class="flex items-center justify-between">
@@ -1755,20 +1791,20 @@
                     </button>
                 </div>
             </div>
-           
+          
             <div class="chatbot-messages" id="chatbot-messages">
                 <div class="chatbot-message bot">
                     سلام! به وبسایت فن‌آموز زرین خوش آمدید! 🌟<br><br>من دستیار هوشمند شما هستم و می‌تونم راجع به:<br>• رشته‌های کامپیوتر و کاردانش<br>• هنرستان‌ها و ثبت نام<br>• ابزارهای هوش مصنوعی<br>• فرصت‌های شغلی<br>• منابع آموزشی<br><br>کمکتون کنم! درباره چه موضوعی دوست دارید صحبت کنیم؟ 💬
                 </div>
             </div>
-           
+          
             <div class="chatbot-input-container">
                 <input type="text" class="chatbot-input" id="chatbot-input" placeholder="پیام خود را بنویسید..." onkeypress="handleChatKeyPress(event)">
                 <button class="chatbot-send" onclick="sendMessage()">
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </div>
-           
+          
             <!-- Registration Form -->
             <div class="chatbot-registration-form" id="registration-form" style="padding: 15px 20px; border-top: 1px solid rgba(255,255,255,0.1); display: none;">
                 <h4 style="margin: 0 0 15px 0; color: var(--primary-blue); font-size: 14px; font-weight: 600;">فرم ثبت نام سریع</h4>
@@ -1810,7 +1846,7 @@
         function toggleTheme() {
             const body = document.body;
             const themeIcon = document.getElementById('theme-icon');
-           
+          
             if (body.classList.contains('light-mode')) {
                 body.classList.remove('light-mode');
                 body.classList.add('dark-mode');
@@ -1843,7 +1879,7 @@
         document.addEventListener('click', function(event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuButton = event.target.closest('button');
-           
+          
             if (!mobileMenu.contains(event.target) && !menuButton) {
                 mobileMenu.classList.remove('active');
             }
@@ -1883,7 +1919,7 @@
                     }
                 });
             }, { threshold: 0.5 });
-           
+          
             observer.observe(articlesSection);
         }
         // ChatGPT Integration with OpenAI API
@@ -1937,7 +1973,7 @@
         function toggleChatbot() {
             const chatbotWindow = document.getElementById('chatbot-window');
             chatbotOpen = !chatbotOpen;
-           
+          
             if (chatbotOpen) {
                 chatbotWindow.style.display = 'flex';
                 chatbotWindow.classList.remove('hidden');
@@ -1946,7 +1982,7 @@
                     chatbotWindow.style.transform = 'scale(1) translateY(0)';
                     chatbotWindow.style.opacity = '1';
                 }, 10);
-               
+              
                 // Send welcome message if first time opening
                 if (conversationHistory.length === 0) {
                     setTimeout(() => {
@@ -2062,18 +2098,18 @@
         async function sendMessage() {
             const input = document.getElementById('chatbot-input');
             const message = input.value.trim();
-           
+          
             if (!message) return;
-           
+          
             addMessage(message, true);
             input.value = '';
             questionCount++;
-           
+          
             // Add to conversation history
             conversationHistory.push({ role: 'user', message: message });
-           
+          
             showTypingIndicator();
-           
+          
             try {
                 // Check if search is needed (e.g., if message is about external info)
                 let searchResults = '';
@@ -2083,11 +2119,11 @@
                 // Use ChatGPT
                 const prompt = `${WEBSITE_CONTEXT}\n\nسوال کاربر: ${message}\n\nنتایج جستجو (اگر مرتبط): ${searchResults}\n\nلطفاً پاسخ کاملی به فارسی بدهید که شامل اطلاعات دقیق از محتوای سایت باشد.`;
                 const response = await callOpenAIAPI(prompt);
-               
+              
                 hideTypingIndicator();
                 addMessage(response);
                 conversationHistory.push({ role: 'assistant', message: response });
-               
+              
                 // If user asks too many questions, suggest contact
                 if (questionCount >= 5) {
                     setTimeout(() => {
@@ -2095,7 +2131,7 @@
                     }, 2000);
                     questionCount = 0; // Reset counter
                 }
-               
+              
             } catch (error) {
                 hideTypingIndicator();
                 // Fallback to local responses
@@ -2106,7 +2142,7 @@
         }
         function getFallbackResponse(userMessage) {
             const message = userMessage.toLowerCase();
-           
+          
             // Greeting responses - کوتاه و مستقیم
             if (message.includes('سلام') || message.includes('درود') || message.includes('صبح بخیر') || message.includes('عصر بخیر') || message.includes('شب بخیر') || message.includes('hi') || message.includes('hello') || message.includes('hey')) {
                 const greetings = [
@@ -2116,17 +2152,17 @@
                 ];
                 return greetings[Math.floor(Math.random() * greetings.length)];
             }
-           
+          
             // About website/developer - کوتاه
             if (message.includes('نویسنده') || message.includes('سازنده') || message.includes('طراح') || message.includes('رعنا') || message.includes('پرموزه')) {
                 return '👩‍💻 سایت توسط <strong>رعنا پرموزه</strong> طراحی شده. سرگروه: <strong>فاطمه معتمد</strong>.';
             }
-           
+          
             // About Fatemeh Motamed - کوتاه
             if (message.includes('فاطمه') || message.includes('معتمد') || message.includes('سرگروه')) {
                 return '<strong>فاطمه معتمد</strong>: سرگروه. تماس: ۰۹۳۷۲۵۶۵۹۹۴ | تلگرام: @cszarindasht | ایتا: @fatemeh_motamed';
             }
-           
+          
             // Comprehensive AI questions - کوتاه و مفید
             if (message.includes('هوش مصنوعی') || message.includes('ai') || message.includes('ابزار')) {
                 const aiResponses = [
@@ -2136,69 +2172,69 @@
                 ];
                 return aiResponses[Math.floor(Math.random() * aiResponses.length)];
             }
-           
+          
             // Course/Field questions - تمرکز روی موفقیت و درآمد
             if (message.includes('رشته') || message.includes('دوره') || message.includes('کلاس')) {
                 return '🎓 رشته‌ها: وب (HTML/CSS/JS/PHP - درآمد ۸-۲۰م) | محتوا (Photoshop/Premiere - ۶-۱۵م).<br>برای موفقیت: پروژه عملی بساز، AI استفاده کن، پورتفولیو بساز. کدوم رشته؟';
             }
-           
+          
             // Specific tool questions - کوتاه
             if (message.includes('wordpress') || message.includes('وردپرس')) {
                 return 'WordPress: نصب + قالب + افزونه. درآمد فریلنس: ۵-۲۰م. تماس: ۰۹۳۷۲۵۶۵۹۹۴';
             }
-           
+          
             if (message.includes('php') || message.includes('mysql')) {
                 return 'PHP/MySQL: پایگاه داده + امنیت. برای موفقیت: پروژه واقعی بساز. درآمد: ۱۰-۲۵م.';
             }
-           
+          
             if (message.includes('html') || message.includes('css') || message.includes('javascript')) {
                 return 'HTML/CSS/JS: پایه وب. موفقیت: responsive طراحی کن + JS تعاملی. شغل: طراح وب (۸-۱۸م).';
             }
-           
+          
             if (message.includes('adobe') || message.includes('photoshop') || message.includes('illustrator')) {
                 return 'Photoshop/Illustrator: ویرایش + وکتور. موفقیت: پروژه گرافیکی بساز. درآمد: ۷-۱۵م (طراح محتوا).';
             }
-           
+          
             // School questions - کوتاه
             if (message.includes('هنرستان') || message.includes('مدرسه')) {
                 return '🏫 ۴ هنرستان: زینب کبری (وب+محتوا)، والفجر (محتوا). تماس مدیر: ۰۷۱۵۳۷۲۴۸۹۵. برای ثبت نام: ۰۹۳۷۲۵۶۵۹۹۴';
             }
-           
+          
             // Future and technology questions - تمرکز موفقیت
             if (message.includes('آینده') || message.includes('فناوری') || message.includes('2025')) {
                 return '🚀 ۲۰۲۵: AI + وب موبایل. موفقیت: مهارت JS + AI یاد بگیر. درآمد: ۱۰-۳۰م. رشته وب ما ایده‌آله.';
             }
-           
+          
             // Learning and education questions - کارهای لازم
             if (message.includes('یادگیری') || message.includes('آموزش')) {
                 return '📚 موفقیت: روزانه ۲س تمرین، پروژه بساز, GitHub بگذار. منابع: ویدیوهای آپارات + کتاب سایت.';
             }
-           
+          
             // Contact questions - کوتاه
             if (message.includes('تماس') || message.includes('شماره')) {
                 return '📞 فاطمه معتمد: ۰۹۳۷۲۵۶۵۹۹۴ | @cszarindasht | @fatemeh_motamed';
             }
-           
+          
             // Programming questions - درآمد و موفقیت
             if (message.includes('برنامه نویسی') || message.includes('کد') || message.includes('وب')) {
                 return '💻 وب: HTML/JS/PHP. موفقیت: اپ ساده بساز. درآمد: ۸-۲۰م. شروع: منابع پایه ۱۰.';
             }
-           
+          
             // Content creation questions
             if (message.includes('محتوا') || message.includes('گرافیک')) {
                 return '🎨 محتوا: Photoshop + Premiere. موفقیت: ویدیو آموزشی بساز. درآمد: ۶-۱۵م.';
             }
-           
+          
             // Thanks responses - کوتاه
             if (message.includes('ممنون') || message.includes('مرسی')) {
                 return 'خواهش! 😊 سوال دیگه؟';
             }
-           
+          
             // Job/Career questions - درآمد
             if (message.includes('شغل') || message.includes('درآمد')) {
                 return '💰 وب: ۸-۲۰م | محتوا: ۶-۱۵م. موفقیت: پورتفولیو + فریلنس (پونیشا).';
             }
-           
+          
             // Registration questions
             if (message.includes('ثبت نام')) {
                 return '📝 ثبت نام: مدارک + مصاحبه. تماس: ۰۹۳۷۲۵۶۵۹۹۴';
@@ -2207,14 +2243,14 @@
             if (message.includes('اخلاق') || message.includes('فیلم')) {
                 return '📹 فیلم‌های اخلاق حرفه‌ای در بخش اخلاق سایت موجود است. برای مثال: <a href="index.html#ethics">اینجا کلیک کنید</a>';
             }
-           
+          
             // Default responses - کوتاه و دقیق
             const defaultResponses = [
                 '🌟 بپرس درباره رشته/شغل/AI. آماده‌ام!',
                 '💡 موفقیت: تمرین روزانه + پروژه. جزئیات؟',
                 '🚀 فن‌آموز زرین: وب/محتوا. کدوم علاقه؟'
             ];
-           
+          
             return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
         }
         function handleChatKeyPress(event) {
@@ -2226,7 +2262,7 @@
         function toggleRegistrationForm() {
             const form = document.getElementById('registration-form');
             const isVisible = form.style.display !== 'none';
-           
+          
             if (isVisible) {
                 form.style.display = 'none';
             } else {
@@ -2235,11 +2271,11 @@
         }
         function submitRegistration(event) {
             event.preventDefault();
-           
+          
             const name = document.getElementById('reg-name').value;
             const email = document.getElementById('reg-email').value;
             const message = document.getElementById('reg-message').value;
-           
+          
             // Create WhatsApp message
             const whatsappMessage = encodeURIComponent(
                 `🎓 درخواست ثبت نام - فن‌آموز زرین\n\n` +
@@ -2248,18 +2284,18 @@
                 `💬 پیام: ${message || 'ندارد'}\n\n` +
                 `لطفاً راهنمایی کنید.`
             );
-           
+          
             // Send to WhatsApp
             window.open(`https://wa.me/989372565994?text=${whatsappMessage}`, '_blank', 'noopener,noreferrer');
-           
+          
             // Show success message
             addMessage('✅ درخواست ثبت نام شما ارسال شد! <strong>خانم فاطمه معتمد</strong> به زودی با شما تماس خواهند گرفت.<br><br>📱 تلفن: ۰۹۳۷۲۵۶۵۹۹۴<br>📱 تلگرام: @cszarindasht<br>📱 ایتا: @fatemeh_motamed');
-           
+          
             // Clear form
             document.getElementById('reg-name').value = '';
             document.getElementById('reg-email').value = '';
             document.getElementById('reg-message').value = '';
-           
+          
             // Hide form
             toggleRegistrationForm();
         }
